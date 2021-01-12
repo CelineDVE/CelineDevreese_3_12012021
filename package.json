@@ -1,0 +1,11 @@
+{
+  "name": "celinedevreese_3_12012021",
+  "version": "1.0.0",
+  "description": "P3 formation OPENCLASSROOMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
