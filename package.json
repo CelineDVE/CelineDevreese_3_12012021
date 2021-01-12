@@ -4,8 +4,16 @@
   "description": "P3 formation OPENCLASSROOMS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CelineDVE/CelineDevreese_3_12012021.git"
+  },
+  "author": "CelineDVE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CelineDVE/CelineDevreese_3_12012021/issues"
+  },
+  "homepage": "https://github.com/CelineDVE/CelineDevreese_3_12012021#readme"
 }
