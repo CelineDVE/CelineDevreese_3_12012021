@@ -1,5 +1,45 @@
+@font-face {
+  font-family: "robotobold";
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("../fonts/shrikhand-regular-webfont.woff2") format("woff2"), url("../fonts/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "robotobold", sans-serif;
+}
+
+.font_title {
+  font-family: "shrikhandregular", cursive, sans-serif;
+}
+
+#bloc_page {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+}
+header a {
+  font-size: 1.5rem;
+}
+header img {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
