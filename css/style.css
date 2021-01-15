@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "robotobold";
-  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-family: "robotoregular";
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,16 +11,12 @@
   font-style: normal;
 }
 body {
-  font-family: "robotobold", sans-serif;
+  font-family: "robotoregular", sans-serif;
+  margin: 0;
 }
 
 .font_title {
   font-family: "shrikhandregular", cursive, sans-serif;
-}
-
-#bloc_page {
-  max-width: 1200px;
-  margin: auto;
 }
 
 a {
@@ -34,12 +30,46 @@ ul {
 
 header {
   display: flex;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 480px) {
+  header {
+    margin: 1rem 0;
+  }
 }
 header a {
   font-size: 1.5rem;
 }
 header img {
   margin: auto;
+}
+
+.search_bar {
+  display: flex;
+  background-color: #eaeaea;
+  padding: 1rem 0;
+  box-shadow: inset 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
+}
+.search_bar p {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
+  color: #353535;
+}
+.search_bar input {
+  width: 45%;
+  background-color: #eaeaea;
+  border: none;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.search_bar input::placeholder {
+  color: #353535;
+  opacity: 1;
+  /* pour Firefox */
+  font-family: "robotoregular", sans-serif;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

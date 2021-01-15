@@ -1,6 +1,10 @@
-#bloc_page {
-    max-width: 1200px;
-    margin: auto;
+body {
+    font-family: $font-text;
+    margin: 0;
+}
+
+.font_title {
+    font-family: $font-title;
 }
 
 a {
@@ -14,6 +18,10 @@ ul {
 
 header {
     display: flex;
+    margin: 2rem 0;
+    @include mobile {
+        margin: 1rem 0;
+    }
     a {
         font-size: 1.5rem;
     }
