@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    margin: 2rem 0;
+    @include mobile {
+        margin: 1rem 0;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+    img {
+        margin: auto;
+    }
+}
