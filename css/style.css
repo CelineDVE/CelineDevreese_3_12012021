@@ -54,14 +54,14 @@ header img {
   display: flex;
   justify-content: center;
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #353535;
 }
 .search_bar input {
-  width: 45%;
+  width: 160px;
   background-color: #eaeaea;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-left: 1rem;
 }
 .search_bar input::placeholder {
