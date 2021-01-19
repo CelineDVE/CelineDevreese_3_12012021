@@ -1,0 +1,102 @@
+.expl {
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @include tablette {
+        display: block;
+    }
+    &__txt {
+        background-color: #f6f6f6;
+        padding: 20px 50px;
+        text-align: center;
+        font-size: 1.5rem;
+        @include tablette {
+            padding: 2rem;
+            font-size: 1.1rem
+        }
+        &--bold {
+            @include font-bold;
+            font-size: 1.7rem;
+            @include tablette {
+                margin: 0;
+            }
+        }
+        &--grey {
+            color: $color-quaternary;
+            margin-bottom: 7rem;
+            @include tablette {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__fonct {
+        margin-top: 20px;
+        padding: 0 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include font-bold;
+        @include tablette {
+            display: block;
+            margin: 3rem 0;
+        }
+        @include mobile {
+            padding: 0 20px;
+        }
+        h2 {
+            width: 100%;
+            margin: 27.2px 0;
+            font-size: 1.7rem;
+        }
+        ol {
+            counter-reset: fonct;
+            padding: 0;
+            @include tablette {
+                padding-left: 20px;
+            }
+        }
+        li {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background-color: #f6f6f6;
+            border-radius: 1.5rem;
+            list-style-type: none;
+            counter-increment: fonct;
+            font-size: 1.2rem;
+            @include box-shadow;
+            @include tablette {
+                width: auto;
+            }
+            @include mobile {
+                padding: 1.5rem .5rem;
+            }
+            &:before {
+                content: counter(fonct);
+                background-color: $color-primary;
+                color: #fff;
+                padding: .2rem .5rem .1rem .5rem;
+                border-radius: 2rem;
+                font-size: .9rem;
+                position: relative;
+                right: 40px;
+                @include mobile {
+                    right: 20px;
+                }
+            }
+            i {
+                color: $color-quaternary;
+                margin-right: 1rem;
+                font-size: 1.5rem;
+            }
+            &:hover {
+                background-color: rgba($color-primary, 0.1);
+                transition: background-color 250ms;
+            }
+            &:hover > i {
+                color: $color-primary;
+                transition: color 250ms;
+            }
+        }
+    }  
+}
