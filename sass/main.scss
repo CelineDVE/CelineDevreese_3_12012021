@@ -4,36 +4,9 @@
 @import "./base/base";
 @import "./components/buttons";
 @import "./layout/header";
+@import "./layout/footer";
 @import "./pages/searchcity";
 @import "./pages/explications";
 @import "./pages/cards-restau";
 
 
-footer {
-    background-color: #353535;
-    color: #fff;
-    padding-bottom: 20px;
-    h1 {
-        padding: 30px 0 0 40px;
-        margin-top: 0;
-        font-size: 1.5rem;
-        font-weight: normal;
-        @include middle {
-            font-size: 1.2rem;
-        }
-    }
-    i {
-        margin-right: .4rem;
-    }
-    li {
-        font-size: 1.1rem;
-        margin-bottom: .5rem;
-        @include middle {
-            font-size: 1rem;
-        }
-        a {
-            color: #fff;
-        }
-    }
-
-}

@@ -15,7 +15,7 @@
         font-family: $font-bold;
         font-size: 1.7rem;
         @include middle {
-            margin-left: 20px;
+            margin: 0 20px;
         }
     }
     a {
@@ -53,6 +53,9 @@
         @include mobile {
             height: 14rem;
         }
+        @include mobile_small {
+            height: 10rem;
+        }
     }
     .img--position {
         object-position: center;
@@ -89,6 +92,7 @@
     i {
         grid-row: span 2;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
     }
 }
