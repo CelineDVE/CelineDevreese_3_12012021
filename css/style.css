@@ -283,6 +283,11 @@ header img {
   margin: 1.5rem;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 980px) {
+  .cards-restau a {
+    margin-bottom: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .cards-restau a {
     width: 100%;
@@ -352,6 +357,38 @@ header img {
   grid-row: span 2;
   text-align: center;
   font-size: 2rem;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-bottom: 20px;
+}
+footer h1 {
+  padding: 30px 0 0 40px;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+@media screen and (max-width: 600px) {
+  footer h1 {
+    font-size: 1.2rem;
+  }
+}
+footer i {
+  margin-right: 0.4rem;
+}
+footer li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 600px) {
+  footer li {
+    font-size: 1rem;
+  }
+}
+footer li a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

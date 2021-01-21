@@ -6,99 +6,34 @@
 @import "./layout/header";
 @import "./pages/searchcity";
 @import "./pages/explications";
+@import "./pages/cards-restau";
 
 
-.cards-restau {
-    height: auto;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    @include tablette {
-        background-color: $color-bgc;
-    }
-    @include middle {
-        padding: 50px 0;
-    }
-    h2 {
-        width: 100%;
-        font-family: $font-bold;
-        font-size: 1.7rem;
+footer {
+    background-color: #353535;
+    color: #fff;
+    padding-bottom: 20px;
+    h1 {
+        padding: 30px 0 0 40px;
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: normal;
         @include middle {
-            margin-left: 20px;
+            font-size: 1.2rem;
         }
-    }
-    a {
-        width: 490px;
-        height: auto;
-        background-color: #fff;
-        border-radius: 1rem;
-        margin: 1.5rem;
-        @include box-shadow;
-        @include mobile {
-            width: 100%;
-        }
-        article {
-            width: 100%;
-            height: auto;
-            display: grid;
-            grid-template-columns: 78% 22%;
-            grid-template-rows: auto auto auto;
-            @include mobile_small {
-                grid-template-columns: 72% 28%;
-            }
-        }
-    }
-    img {
-        width: 100%;
-        height: 16rem;
-        object-fit: cover;
-        object-position: bottom;
-        border-radius: 1rem 1rem 0 0;
-        grid-column: 1 / span 2;
-        grid-row: 1;
-        @include mobile {
-            height: 14rem;
-        }
-    }
-    .img--position {
-        object-position: center;
-    }
-    .new {
-        grid-column: 2;
-        grid-row: 1;
-        border-radius: .2rem;
-        background-color: #abe0d1;
-        color: #3e8568;
-        font-weight: bold;
-        height: 1.5rem;
-        font-size: .9rem;
-        text-align: center;
-        padding: .3rem .1rem 0 .1rem;
-        margin: 1rem 1rem 0 0;
-        @include mobile {
-            padding: .3rem 0 0 0;
-        }
-    }
-    h3 {
-        grid-column: 1;
-        grid-row: 2;
-        font-family: $font-bold;
-        margin: 20px 0 0 10px;
-        font-size: 1.2rem;
-    }
-    p {
-        grid-column: 1;
-        grid-row: 3;
-        margin: 0 0 20px 10px;
-        font-size: 1.1rem;
     }
     i {
-        grid-row: span 2;
-        text-align: center;
-        font-size: 2rem;
+        margin-right: .4rem;
     }
+    li {
+        font-size: 1.1rem;
+        margin-bottom: .5rem;
+        @include middle {
+            font-size: 1rem;
+        }
+        a {
+            color: #fff;
+        }
+    }
+
 }
-
-
-
