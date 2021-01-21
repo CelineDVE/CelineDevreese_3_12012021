@@ -6,7 +6,7 @@
         display: block;
     }
     &__txt {
-        background-color: #f6f6f6;
+        background-color: $color-bgc;
         padding: 20px 50px;
         text-align: center;
         font-size: 1.5rem;
@@ -38,11 +38,12 @@
         @include font-bold;
         @include tablette {
             display: block;
-            margin: 3rem 0;
+            margin: 50px 0 80px 0;
         }
         @include mobile {
             padding: 0 20px;
         }
+
         h2 {
             width: 100%;
             margin: 27.2px 0;
@@ -54,12 +55,15 @@
             @include tablette {
                 padding-left: 20px;
             }
+            @include mobile_small {
+            padding-left: 10px;
+        }
         }
         li {
             width: 100%;
             margin-bottom: 1.5rem;
             padding: 1.5rem;
-            background-color: #f6f6f6;
+            background-color: $color-bgc;
             border-radius: 1.5rem;
             list-style-type: none;
             counter-increment: fonct;
@@ -71,6 +75,9 @@
             @include mobile {
                 padding: 1.5rem .5rem;
             }
+            @include mobile_small {
+                    font-size: 1.1rem;
+                }
             &:before {
                 content: counter(fonct);
                 background-color: $color-primary;
@@ -88,6 +95,9 @@
                 color: $color-quaternary;
                 margin-right: 1rem;
                 font-size: 1.5rem;
+                @include mobile_small {
+                    font-size: 1.2rem;
+                }
             }
             &:hover {
                 background-color: rgba($color-primary, 0.1);

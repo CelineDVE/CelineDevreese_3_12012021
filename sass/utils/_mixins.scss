@@ -1,5 +1,17 @@
+@mixin mobile_small {
+    @media screen and (max-width: map-get($breakpoints, mobile_small)) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin middle {
+    @media screen and (max-width: map-get($breakpoints, middle)) {
         @content;
     }
 }

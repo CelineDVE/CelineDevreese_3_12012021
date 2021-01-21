@@ -1,6 +1,15 @@
 body {
     font-family: $font-text;
     margin: 0;
+    
+}
+
+#bloc_page {
+    max-width: 1700px;
+    margin: auto;
+    @include tablette {
+        width: auto;
+    } 
 }
 
 .font_title {
