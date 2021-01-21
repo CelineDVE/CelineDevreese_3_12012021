@@ -15,28 +15,28 @@
         </header>
         <!-- MAIN -->
         <main>
-            <form action="#" method="POST">
+            <form class="search_city" action="#" method="POST">
                 <p>
                     <i class="fas fa-map-marker-alt"></i>
                     <input type="search" placeholder="Paris, Belleville">
                 </p>
             </form>
-            <div>
-            <aside>
-                <p>Réservez le menu qui vous convient</p>
-                <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
-                <form action="#" method="POST">
+            <div class="expl">
+            <aside class="expl__txt">
+                <p class="expl__txt--bold">Réservez le menu qui vous convient</p>
+                <p class="expl__txt--grey">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <form class="btn" action="#" method="POST">
                     <p>
                         <input type="submit" value="Explorer nos restaurants">
                     </p>
                 </form>
             </aside>
-            <aside>
+            <aside class="expl__fonct">
                 <h2>Fonctionnement</h2>
                 <ol>
                     <li>
                         <i class="fas fa-mobile-alt"></i>
-                        Choissez un restaurant
+                        Choisissez un restaurant
                     </li>
                     <li>
                         <i class="fas fa-list-ul"></i>
@@ -49,12 +49,12 @@
                 </ol> 
             </aside>
             </div>
-            <section>
+            <section class="cards-restau">
                 <h2>Restaurants</h2>
                 <a href="palettedugout.html">
                     <article>
                         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo du restaurant">
-                        <p>Nouveau</p>
+                        <p class="new">Nouveau</p>
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
                         <i class="far fa-heart"></i>
@@ -62,8 +62,8 @@
                 </a>
                 <a href="noteenchantee.html">
                     <article>
-                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo du restaurant">
-                        <p>Nouveau</p>
+                        <img class="img--position" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo du restaurant">
+                        <p class="new">Nouveau</p>
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                         <i class="far fa-heart"></i>
@@ -89,14 +89,14 @@
         </main>
         <!-- FOOTER -->
         <footer>
-            <h1>ohmyfood</h1>
+            <h1 class="font_title">ohmyfood</h1>
             <ul>
                 <li>
-                    <i class="fas fa-utensils"></i>
+                    <i class="fas fa-utensils fa-fw"></i>
                     Proposer un restaurant
                 </li>
                 <li>
-                    <i class="fas fa-hands-helping"></i>
+                    <i class="fas fa-hands-helping fa-fw"></i>
                     Devenir partenaire
                 </li>
                 <li>Mentions légales</li>

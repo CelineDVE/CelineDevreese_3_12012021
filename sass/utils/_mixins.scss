@@ -1,0 +1,31 @@
+@mixin mobile_small {
+    @media screen and (max-width: map-get($breakpoints, mobile_small)) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin middle {
+    @media screen and (max-width: map-get($breakpoints, middle)) {
+        @content;
+    }
+}
+
+@mixin tablette {
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin font-bold {
+    font-family: $font-bold;
+}
+
+@mixin box-shadow {
+    box-shadow: 6px 6px 10px rgba(#000, 0.2);
+}
