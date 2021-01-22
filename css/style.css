@@ -258,8 +258,7 @@ footer li a {
   color: #353535;
   opacity: 1;
   /* pour Firefox */
-  font-family: "robotolight", sans-serif;
-  font-weight: bold;
+  font-family: "robotobold", sans-serif;
 }
 
 .expl {

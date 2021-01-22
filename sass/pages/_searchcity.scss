@@ -19,8 +19,7 @@
         &::placeholder {
             color: #353535;
             opacity: 1; /* pour Firefox */
-            font-family: $font-text;
-            font-weight: bold;
+            font-family: $font-bold;
         }
     }
 }
