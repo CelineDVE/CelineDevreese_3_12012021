@@ -484,7 +484,7 @@ footer li a {
   border-radius: 0.2rem;
   background-color: #abe0d1;
   color: #3e8568;
-  font-weight: bold;
+  font-family: "robotobold", sans-serif;
   height: 1.5rem;
   font-size: 0.9rem;
   text-align: center;
