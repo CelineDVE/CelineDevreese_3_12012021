@@ -1,0 +1,101 @@
+/* PAGE MENU */
+
+.img-menu {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    @include tablette {
+        height: auto;
+        object-fit: contain;
+    }
+}
+.menu {
+    position: relative;
+    width: auto;
+    background-color: $color-bgc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 50px 0 50px;
+    @include tablette {
+        display: block;
+        padding: 0;
+    }
+    h2 {
+        background-color: $color-bgc;
+        border-radius: 2.5rem 2.5rem 0 0;
+        position: absolute;
+        top: -72px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 0 0 0;
+        font-size: 2rem;
+        margin: 0 0 10px 0;
+        @include mobile_small {
+            padding-top: 30px;
+            font-size: 1.8rem;
+            top: -59px;
+        }
+    }
+    form {
+        width: 100%;
+        text-align: center;
+        padding: 100px;
+        @include tablette {
+            width: auto;
+        }
+        @include mobile {
+            padding: 40px 0 80px 0;
+        }
+    }
+}
+.menu-aside {
+    padding-top: 20px;
+    flex-basis: 0;
+    flex-grow: 1;
+    &__h3 {
+        text-transform: uppercase;
+        margin-left: 20px;
+        font-size: 1.5rem;
+        @include mobile {
+            font-size: 1.2rem;
+        }
+    }
+    &__h3::after {
+        content: '';
+        display: block;
+        width: 40px;
+        margin: 0;
+        padding-top: .5rem;
+        border-bottom: 3px solid $color-tertiary;
+    }
+    article {
+        background-color: #fff;
+        border-radius: 1rem;
+        margin: 20px;
+        padding: 15px 10px;
+        @include box-shadow;
+        h3 {
+            font-family: $font-bold;
+            font-size: 1.5rem;
+            margin: 0;
+            @include mobile {
+                font-size: 1.2rem;
+            }
+        }
+        p {
+            margin: 0;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: space-between;
+            @include mobile {
+                font-size: 1rem;
+            }
+        }
+        span {
+            font-family: $font-bold;
+            margin-right: 20px;
+        }
+    }
+}

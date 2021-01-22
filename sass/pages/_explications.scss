@@ -12,7 +12,6 @@
         font-size: 1.5rem;
         @include tablette {
             padding: 2rem;
-            font-size: 1.1rem
         }
         &--bold {
             @include font-bold;
@@ -22,10 +21,11 @@
             }
         }
         &--grey {
-            color: $color-quaternary;
+            color: rgba(#000, 0.5);
             margin-bottom: 7rem;
             @include tablette {
                 margin-bottom: 30px;
+                font-size: 1.2rem;
             }
         }
     }
@@ -92,7 +92,7 @@
                 }
             }
             i {
-                color: $color-quaternary;
+                color: rgba(#000, 0.5);
                 margin-right: 1rem;
                 font-size: 1.5rem;
                 @include mobile_small {

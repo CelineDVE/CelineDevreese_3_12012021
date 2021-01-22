@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "robotoregular";
-  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-family: "robotolight";
+  src: url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
   font-style: normal;
 }
 body {
-  font-family: "robotoregular", sans-serif;
+  font-family: "robotolight", sans-serif;
   margin: 0;
 }
 
@@ -50,14 +50,15 @@ ul {
   border: none;
   font-size: 1.3rem;
   background: linear-gradient(-2deg, #9356dc, #ff79da);
-  padding: 1rem 2rem;
+  padding: 1.1rem 1.5rem;
   border-radius: 2rem;
   cursor: pointer;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) {
   .btn [value] {
     font-size: 1.1rem;
+    min-width: 50%;
   }
 }
 .btn [value]:hover {
@@ -114,6 +115,125 @@ footer li a {
   color: #fff;
 }
 
+/* PAGE MENU */
+.img-menu {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+@media screen and (max-width: 980px) {
+  .img-menu {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.menu {
+  position: relative;
+  width: auto;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 50px 0 50px;
+}
+@media screen and (max-width: 980px) {
+  .menu {
+    display: block;
+    padding: 0;
+  }
+}
+.menu h2 {
+  background-color: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  position: absolute;
+  top: -72px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0 0 0;
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+}
+@media screen and (max-width: 415px) {
+  .menu h2 {
+    padding-top: 30px;
+    font-size: 1.8rem;
+    top: -59px;
+  }
+}
+.menu form {
+  width: 100%;
+  text-align: center;
+  padding: 100px;
+}
+@media screen and (max-width: 980px) {
+  .menu form {
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu form {
+    padding: 40px 0 80px 0;
+  }
+}
+
+.menu-aside {
+  padding-top: 20px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.menu-aside__h3 {
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  .menu-aside__h3 {
+    font-size: 1.2rem;
+  }
+}
+.menu-aside__h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  margin: 0;
+  padding-top: 0.5rem;
+  border-bottom: 3px solid #99e2d0;
+}
+.menu-aside article {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 20px;
+  padding: 15px 10px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.menu-aside article h3 {
+  font-family: "robotobold", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .menu-aside article h3 {
+    font-size: 1.2rem;
+  }
+}
+.menu-aside article p {
+  margin: 0;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .menu-aside article p {
+    font-size: 1rem;
+  }
+}
+.menu-aside article span {
+  font-family: "robotobold", sans-serif;
+  margin-right: 20px;
+}
+
 .search_city {
   display: flex;
   background-color: #eaeaea;
@@ -138,7 +258,7 @@ footer li a {
   color: #353535;
   opacity: 1;
   /* pour Firefox */
-  font-family: "robotoregular", sans-serif;
+  font-family: "robotolight", sans-serif;
   font-weight: bold;
 }
 
@@ -161,7 +281,6 @@ footer li a {
 @media screen and (max-width: 980px) {
   .expl__txt {
     padding: 2rem;
-    font-size: 1.1rem;
   }
 }
 .expl__txt--bold {
@@ -180,6 +299,7 @@ footer li a {
 @media screen and (max-width: 980px) {
   .expl__txt--grey {
     margin-bottom: 30px;
+    font-size: 1.2rem;
   }
 }
 .expl__fonct {
@@ -395,28 +515,6 @@ footer li a {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 1.5rem;
-}
-
-/* PAGE MENU */
-.img-menu {
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
-}
-@media screen and (max-width: 600px) {
-  .img-menu {
-    height: auto;
-    object-fit: contain;
-  }
-}
-
-.menu h2 {
-  background-color: red;
-  border-radius: 4rem 4rem 0 0;
-  margin: auto;
-  padding: 30px 50px 0 50px;
-  display: flex;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
