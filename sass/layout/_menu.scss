@@ -32,11 +32,6 @@
         padding: 40px 0 0 0;
         font-size: 2rem;
         margin: 0 0 10px 0;
-        @include mobile_small {
-            padding-top: 30px;
-            font-size: 1.8rem;
-            top: -59px;
-        }
     }
     form {
         width: 100%;

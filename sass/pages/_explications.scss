@@ -55,7 +55,7 @@
             @include tablette {
                 padding-left: 20px;
             }
-            @include mobile_small {
+            @include mobile {
             padding-left: 10px;
         }
         }
@@ -74,10 +74,8 @@
             }
             @include mobile {
                 padding: 1.5rem .5rem;
+                font-size: 1.1rem;
             }
-            @include mobile_small {
-                    font-size: 1.1rem;
-                }
             &:before {
                 content: counter(fonct);
                 background-color: $color-primary;
@@ -95,7 +93,7 @@
                 color: rgba(#000, 0.5);
                 margin-right: 1rem;
                 font-size: 1.5rem;
-                @include mobile_small {
+                @include mobile {
                     font-size: 1.2rem;
                 }
             }
