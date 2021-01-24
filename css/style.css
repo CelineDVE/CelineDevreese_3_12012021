@@ -25,7 +25,7 @@ body {
   max-width: 1700px;
   margin: auto;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   #bloc_page {
     width: auto;
   }
@@ -55,7 +55,7 @@ ul {
   cursor: pointer;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .btn [value] {
     font-size: 1.1rem;
     min-width: 50%;
@@ -95,7 +95,7 @@ footer h2 {
   font-size: 1.5rem;
   font-weight: normal;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   footer h2 {
     font-size: 1.2rem;
   }
@@ -107,7 +107,7 @@ footer li {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   footer li {
     font-size: 1rem;
   }
@@ -122,7 +122,7 @@ footer li a {
   height: 30rem;
   object-fit: cover;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .img-menu {
     height: auto;
     object-fit: contain;
@@ -138,7 +138,7 @@ footer li a {
   justify-content: space-around;
   padding: 0 50px 0 50px;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .menu {
     display: block;
     padding: 0;
@@ -161,7 +161,7 @@ footer li a {
   text-align: center;
   padding: 100px;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .menu form {
     width: auto;
   }
@@ -260,7 +260,7 @@ footer li a {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .expl {
     display: block;
   }
@@ -271,7 +271,7 @@ footer li a {
   text-align: center;
   font-size: 1.5rem;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .expl__txt {
     padding: 2rem;
   }
@@ -280,7 +280,7 @@ footer li a {
   font-family: "robotobold", sans-serif;
   font-size: 1.7rem;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .expl__txt--bold {
     margin: 0;
   }
@@ -289,21 +289,21 @@ footer li a {
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 7rem;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .expl__txt--grey {
     margin-bottom: 30px;
     font-size: 1.2rem;
   }
 }
 .expl__fonct {
-  margin-top: 20px;
+  margin: 20px 20px 0 0;
   padding: 0 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   font-family: "robotobold", sans-serif;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .expl__fonct {
     display: block;
     margin: 50px 0 80px 0;
@@ -323,7 +323,7 @@ footer li a {
   counter-reset: fonct;
   padding: 0;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .expl__fonct ol {
     padding-left: 20px;
   }
@@ -344,7 +344,7 @@ footer li a {
   font-size: 1.2rem;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .expl__fonct li {
     width: auto;
   }
@@ -396,6 +396,18 @@ footer li a {
   width: 100%;
   height: auto;
   font-size: 1.6rem;
+  padding: 5rem 0;
+}
+@media screen and (max-width: 800px) {
+  .cards-restau {
+    background-color: #f6f6f6;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cards-restau {
+    padding-top: 2.5rem;
+  }
 }
 .cards-restau h2 {
   font-family: "robotobold", sans-serif;
@@ -403,12 +415,34 @@ footer li a {
   font-size: 1.7rem;
   margin-left: 5rem;
 }
+@media screen and (max-width: 800px) {
+  .cards-restau h2 {
+    margin-left: 3.12rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cards-restau h2 {
+    margin-left: 1.25rem;
+  }
+}
 .cards-restau a {
   width: 580px;
   margin: 1rem;
   height: auto;
   border-radius: 1.5rem;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 800px) {
+  .cards-restau a {
+    width: auto;
+    margin: 1rem 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cards-restau a {
+    object-position: bottom;
+    margin: 1rem 1.25rem;
+  }
 }
 .cards-restau article {
   display: flex;
@@ -422,10 +456,31 @@ footer li a {
   border-radius: 1.5rem 1.5rem 0 0;
   position: relative;
 }
+@media screen and (max-width: 800px) {
+  .cards-restau img {
+    height: 12rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cards-restau img {
+    object-position: bottom;
+  }
+}
 .cards-restau .img--position {
   object-position: bottom;
 }
+@media screen and (max-width: 800px) {
+  .cards-restau .img--position {
+    object-position: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cards-restau .img--position {
+    object-position: bottom;
+  }
+}
 .cards-restau .new {
+  align-self: flex-end;
   background-color: #abe0d1;
   color: #34896c;
   font-family: "robotobold", sans-serif;
@@ -433,18 +488,39 @@ footer li a {
   text-align: center;
   padding: 0.5rem 1.5rem;
   border-radius: 0.2rem;
-  position: absolute;
   min-width: 6rem;
   max-width: 6rem;
-  margin-left: 26rem;
+  position: absolute;
+  margin-right: 1rem;
   margin-top: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+  .cards-restau .new {
+    font-size: 1.2rem;
+    min-width: 5rem;
+    max-width: 5rem;
+    padding: 0.5rem 1rem;
+  }
 }
 .cards-restau h3 {
   font-family: "robotobold", sans-serif;
   margin: 1.5rem 0 0 1rem;
 }
 .cards-restau p {
-  margin: 0 0 0 1rem;
+  margin: 0 0 1rem 1rem;
+}
+.cards-restau i {
+  align-self: flex-end;
+  position: absolute;
+  margin-right: 2rem;
+  margin-top: 18.5rem;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 800px) {
+  .cards-restau i {
+    font-size: 2rem;
+    margin-top: 14.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
