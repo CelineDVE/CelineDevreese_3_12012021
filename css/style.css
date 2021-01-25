@@ -130,8 +130,10 @@ footer li a {
 }
 
 .menu {
-  position: relative;
   width: auto;
+  position: relative;
+  margin-top: -3rem;
+  border-radius: 2.5rem 2.5rem 0 0;
   background-color: #f6f6f6;
   display: flex;
   flex-wrap: wrap;
@@ -141,17 +143,13 @@ footer li a {
 @media screen and (max-width: 800px) {
   .menu {
     display: block;
-    padding: 0;
+    padding: 0 20px 0 20px;
   }
 }
 .menu h2 {
-  background-color: #f6f6f6;
-  border-radius: 2.5rem 2.5rem 0 0;
-  position: absolute;
-  top: -72px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 40px 0 0 0;
   font-size: 2rem;
   margin: 0 0 10px 0;
@@ -185,6 +183,7 @@ footer li a {
 @media screen and (max-width: 480px) {
   .menu-aside__h3 {
     font-size: 1.2rem;
+    margin-left: 0;
   }
 }
 .menu-aside__h3::after {
@@ -201,6 +200,12 @@ footer li a {
   margin: 20px;
   padding: 15px 10px;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 480px) {
+  .menu-aside article {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 .menu-aside article h3 {
   font-family: "robotobold", sans-serif;
@@ -395,13 +400,12 @@ footer li a {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding: 5rem 0;
 }
 @media screen and (max-width: 800px) {
   .cards-restau {
     background-color: #f6f6f6;
-    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -427,6 +431,7 @@ footer li a {
 }
 .cards-restau a {
   width: 580px;
+  background-color: #fff;
   margin: 1rem;
   height: auto;
   border-radius: 1.5rem;
@@ -484,21 +489,18 @@ footer li a {
   background-color: #abe0d1;
   color: #34896c;
   font-family: "robotobold", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   padding: 0.5rem 1.5rem;
   border-radius: 0.2rem;
-  min-width: 6rem;
-  max-width: 6rem;
+  min-width: 5rem;
+  max-width: 5rem;
   position: absolute;
   margin-right: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 800px) {
   .cards-restau .new {
-    font-size: 1.2rem;
-    min-width: 5rem;
-    max-width: 5rem;
     padding: 0.5rem 1rem;
   }
 }
@@ -513,12 +515,11 @@ footer li a {
   align-self: flex-end;
   position: absolute;
   margin-right: 2rem;
-  margin-top: 18.5rem;
-  font-size: 2.5rem;
+  margin-top: 18rem;
+  font-size: 2rem;
 }
 @media screen and (max-width: 800px) {
   .cards-restau i {
-    font-size: 2rem;
     margin-top: 14.2rem;
   }
 }

@@ -4,11 +4,10 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding: 5rem 0;
     @include tablette {
-        background-color: $color-bgc;
-        font-size: 1.3rem;
+        background-color: $color-bgc;;
     }
     @include mobile {
         padding-top: 2.5rem;
@@ -27,6 +26,7 @@
     }
     a {
         width: 580px;
+        background-color: #fff;
         margin: 1rem;
         height: auto;
         border-radius: 1.5rem;
@@ -72,19 +72,16 @@
         background-color: #abe0d1;
         color: #34896c;
         font-family: $font-bold;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
         padding: .5rem 1.5rem;
         border-radius: .2rem;
-        min-width: 6rem;
-        max-width: 6rem;
+        min-width: 5rem;
+        max-width: 5rem;
         position: absolute;
         margin-right: 1rem;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         @include tablette {
-            font-size: 1.2rem;
-            min-width: 5rem;
-            max-width: 5rem;
             padding: .5rem 1rem;
         }
     }
@@ -99,10 +96,9 @@
         align-self: flex-end;
         position: absolute;
         margin-right: 2rem;
-        margin-top: 18.5rem;
-        font-size: 2.5rem;
+        margin-top: 18rem;
+        font-size: 2rem;
         @include tablette {
-            font-size: 2rem;
             margin-top: 14.2rem;
         }
     }
