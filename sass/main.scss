@@ -10,3 +10,20 @@
 @import "./pages/explications";
 @import "./pages/cards-restau";
 
+
+.progress__heart {
+    content: url(../images/heart-regular.svg);
+    width: 2rem;
+        &:hover{
+           animation: progress-heart 2000ms 150ms;
+        }
+}
+
+@keyframes progress-heart {
+    0% {
+        content: url(../images/heart-regular.svg);
+    }
+    100% {
+        content: url(../images/heart-solid.svg);
+    }
+}

@@ -92,14 +92,5 @@
     p {
         margin: 0 0 1rem 1rem;
     }
-    i {
-        align-self: flex-end;
-        position: absolute;
-        margin-right: 2rem;
-        margin-top: 18rem;
-        font-size: 2rem;
-        @include tablette {
-            margin-top: 14.2rem;
-        }
-    }
+    
 }     

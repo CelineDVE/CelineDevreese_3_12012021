@@ -511,16 +511,21 @@ footer li a {
 .cards-restau p {
   margin: 0 0 1rem 1rem;
 }
-.cards-restau i {
-  align-self: flex-end;
-  position: absolute;
-  margin-right: 2rem;
-  margin-top: 18rem;
-  font-size: 2rem;
+
+.progress__heart {
+  content: url(../images/heart-regular.svg);
+  width: 2rem;
 }
-@media screen and (max-width: 800px) {
-  .cards-restau i {
-    margin-top: 14.2rem;
+.progress__heart:hover {
+  animation: progress-heart 2000ms 150ms;
+}
+
+@keyframes progress-heart {
+  0% {
+    content: url(../images/heart-regular.svg);
+  }
+  100% {
+    content: url(../images/heart-solid.svg);
   }
 }
 
