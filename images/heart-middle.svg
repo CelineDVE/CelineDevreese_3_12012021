@@ -16,7 +16,7 @@
    viewBox="0 0 512 512"
    version="1.1"
    id="svg884"
-   sodipodi:docname="heart-solid.svg"
+   sodipodi:docname="heart-middle.svg"
    inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
   <metadata
      id="metadata890">
@@ -62,7 +62,7 @@
      fill="currentColor"
      d="M 453.00249,60.853406 C 400.40657,13.813702 322.18456,22.274805 273.90766,74.552335 L 255,95 236.09235,74.552335 C 187.91142,22.274805 109.59343,13.813702 56.997524,60.853406 -3.2766201,114.8433 -6.4438917,211.74307 47.495708,270.2657 L 233.21301,471.51908 c 11.99724,12.99384 31.48077,12.99384 43.47801,0 L 462.40833,270.2657 c 54.03557,-58.52263 50.8683,-155.4224 -9.40584,-209.412294 z"
      id="path882"
-     style="opacity:1;fill:#9356dc;fill-opacity:1;stroke:#000000;stroke-width:15;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="opacity:1;fill:#ff79da;fill-opacity:1;stroke:#000000;stroke-width:15;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
   <g
      inkscape:groupmode="layer"
      id="layer1"

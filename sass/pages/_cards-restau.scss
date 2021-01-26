@@ -50,7 +50,6 @@
         object-fit: cover;
         height: 16rem;
         border-radius: 1.5rem 1.5rem 0 0;
-        position: relative;
         @include tablette {
             height: 12rem;
         }
@@ -90,7 +89,15 @@
         margin: 1.5rem 0 0 1rem;
     }
     p {
-        margin: 0 0 1rem 1rem;
+        margin: 0 0 0 1rem;
+    }
+    .heart {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 3rem;
+        right: 4rem;
+        font-size: 2rem;
     }
     
 }     
