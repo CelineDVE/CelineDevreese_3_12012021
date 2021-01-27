@@ -98,6 +98,9 @@
         bottom: 3rem;
         right: 4rem;
         font-size: 2rem;
+        @include tablette {
+            right: 2rem;
+        }
     }
     
 }     

@@ -4,32 +4,10 @@
 @import "./base/base";
 @import "./components/buttons";
 @import "./components/progressHeart";
+@import "./components/loading";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/menu";
 @import "./pages/searchcity";
 @import "./pages/explications";
 @import "./pages/cards-restau";
-
-@keyframes background {
-   0% {
-       opacity: 1;
-   }
-   100% {
-       opacity: 1;
-   }
-}
-
-.loading {
-    position: absolute;
-    width: 100%;
-    height: 200vh;
-    background: $color-tertiary;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-}
