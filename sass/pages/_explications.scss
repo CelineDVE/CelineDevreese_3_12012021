@@ -7,7 +7,7 @@
     }
     &__txt {
         background-color: $color-bgc;
-        padding: 20px 50px;
+        padding: 30px 50px;
         text-align: center;
         font-size: 1.5rem;
         @include tablette {
@@ -22,7 +22,7 @@
         }
         &--grey {
             color: rgba(#000, 0.5);
-            margin-bottom: 7rem;
+            margin-bottom: 5rem;
             @include tablette {
                 margin-bottom: 30px;
                 font-size: 1.2rem;
