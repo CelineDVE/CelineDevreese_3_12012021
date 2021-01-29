@@ -74,8 +74,14 @@
 }
 
 .order {
-    width: 100%;
+    max-width: 50%;
+    min-width: 40%;
     display: flex;
+    margin: auto;
+    @include tablette {
+        max-width: none;
+        min-width: none;
+    }
     article {
         width: 100%;
         background-color: #fff;
@@ -100,7 +106,6 @@
             justify-content: space-between;
         }
         p {
-            width: auto;
             margin: 0;
             font-size: 1.3rem;
             white-space: nowrap;
@@ -111,7 +116,6 @@
             }
         }
         span {
-            width: auto;
             font-family: $font-bold;
             font-size: 1.3rem;
             margin: 0 1rem;
@@ -151,34 +155,33 @@
             font-size: 1.2rem;
         }
     }
-    &:active article {
+    &:hover article {
         border-radius: 1rem 0 0 1rem;
+        width: 85%;
+        transition: width 500ms cubic-bezier(.05,.33,.89,1.03);
     }
-    &:active .order-bg {
+    &:hover .order-bg {
         display: block;
-        animation: order 500ms cubic-bezier(.05,.33,.89,1.03);
+        animation: order 500ms 100ms cubic-bezier(.05,.33,.89,1.03) both;
+        opacity: 0;
     }
     .fa-check-circle{
-            animation: check 500ms 100ms cubic-bezier(.05,.33,.89,1.03) both;
-            opacity: 0;
-        }    
+        animation: check 800ms 300ms cubic-bezier(.05,.33,.89,1.03) ;
+    }    
 }
 
 @keyframes order {
-    0% {
-        width: 0%;
-    }
     100% {
         width: 15%;
+        opacity: 1;
     }
 }
-
 @keyframes check {
     0% {
         transform: rotate(-360deg);
     }
     100% {
-        opacity: 1;
+        
         transform: rotate(0deg);
     }
 }

@@ -1,6 +1,5 @@
 .btn {
     & [value] {
-        min-width: 20%;
         color: #fff;
         border: none;
         font-size: 1.3rem;
@@ -9,10 +8,6 @@
         border-radius: 2rem;
         cursor: pointer;
         @include box-shadow;
-        @include tablette {
-            font-size: 1.1rem;
-            min-width: 50%;
-        }
         &:hover {
             box-shadow: 6px 6px 15px 2px rgba(0, 0, 0, 0.3);
             opacity: 0.9;
