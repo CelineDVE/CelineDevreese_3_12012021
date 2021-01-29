@@ -222,11 +222,6 @@ footer li a {
     transform: translate(-110%) scale(0);
   }
 }
-@keyframes order {
-  100% {
-    width: 90%;
-  }
-}
 .img-menu {
   width: 100%;
   height: 30rem;
@@ -268,17 +263,11 @@ footer li a {
 }
 
 .menu-aside {
-  max-width: 50%;
+  width: auto;
   padding-top: 20px;
   opacity: 1;
   margin: auto;
   animation: menu-opacity 1200ms cubic-bezier(0.73, 0.01, 0.2, 0.99) both;
-}
-@media screen and (max-width: 800px) {
-  .menu-aside {
-    max-width: 100%;
-    margin-right: 20px;
-  }
 }
 .menu-aside__h3 {
   text-transform: uppercase;
@@ -311,29 +300,22 @@ footer li a {
   width: 100%;
   display: flex;
 }
-.order:hover {
-  animation: order 1000ms both;
-  border-radius: 0 1rem 1rem 0;
-}
 .order article {
   width: 100%;
   background-color: #fff;
   border-radius: 1rem;
-  margin: 1.5rem 0;
+  margin: 0.5rem 0;
   padding: 15px 10px;
   animation: menu_item 1200ms cubic-bezier(0.73, 0.01, 0.2, 0.99) both;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
-}
-@media screen and (max-width: 480px) {
-  .order article {
-    margin: 0;
-    margin-bottom: 20px;
-  }
 }
 .order article h3 {
   font-family: "robotobold", sans-serif;
   font-size: 1.5rem;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 480px) {
   .order article h3 {
@@ -345,6 +327,7 @@ footer li a {
   justify-content: space-between;
 }
 .order article p {
+  width: auto;
   margin: 0;
   font-size: 1.3rem;
   white-space: nowrap;
@@ -357,6 +340,7 @@ footer li a {
   }
 }
 .order article span {
+  width: auto;
   font-family: "robotobold", sans-serif;
   font-size: 1.3rem;
   margin: 0 1rem;
@@ -365,9 +349,6 @@ footer li a {
   .order article span {
     font-size: 1rem;
   }
-}
-.order article:hover {
-  border-radius: 1rem 0 0 1rem;
 }
 .order .menu1 {
   animation-delay: 300ms;
@@ -381,20 +362,56 @@ footer li a {
 .order .menu4 {
   animation-delay: 1200ms;
 }
-.order .fa-check-circle {
-  width: 10%;
-  height: auto;
-  align-self: center;
+.order .order-bg {
+  width: 15%;
+  height: 100%;
+  margin: auto;
+  padding: 0.84rem 0;
   background-color: #99e2d0;
-  color: #fff;
-  font-size: 2rem;
-  text-align: center;
-  padding: 1.85rem 0;
   border-radius: 0 1rem 1rem 0;
+  text-align: center;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
   display: none;
 }
+.order .fa-check-circle {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .order .fa-check-circle {
+    font-size: 1.2rem;
+  }
+}
+.order:active article {
+  border-radius: 1rem 0 0 1rem;
+}
+.order:active .order-bg {
+  display: block;
+  animation: order 500ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
+}
+.order .fa-check-circle {
+  animation: check 500ms 100ms cubic-bezier(0.05, 0.33, 0.89, 1.03) both;
+  opacity: 0;
+}
 
+@keyframes order {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@keyframes check {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
 .search_city {
   display: flex;
   background-color: #eaeaea;
