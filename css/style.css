@@ -21,16 +21,6 @@ body {
   margin: 0;
 }
 
-#bloc_page {
-  max-width: 1700px;
-  margin: auto;
-}
-@media screen and (max-width: 800px) {
-  #bloc_page {
-    width: auto;
-  }
-}
-
 .font_title {
   font-family: "shrikhandregular", cursive, sans-serif;
 }
@@ -45,9 +35,10 @@ ul {
 }
 
 .btn [value] {
+  min-width: 200px;
   color: #fff;
+  font-size: 1.1rem;
   border: none;
-  font-size: 1.3rem;
   background: linear-gradient(-2deg, #9356dc, #ff79da);
   padding: 1.1rem 1.5rem;
   border-radius: 2rem;
@@ -63,18 +54,20 @@ ul {
 .progress-heart {
   display: block;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 0.11rem;
   -webkit-text-stroke-color: #000;
   background: -webkit-linear-gradient(-150deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
-  transition: background 1000ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
+  transition: all 1000ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
   background-repeat: no-repeat;
   background-size: 100% 0px;
   background-position: 100% 100%;
   cursor: pointer;
+  padding: 0.1rem;
 }
 .progress-heart:hover {
   background-size: 100% 100%;
+  -webkit-text-stroke-color: transparent;
 }
 
 @keyframes bg {
@@ -158,18 +151,18 @@ ul {
 /* HEADER*/
 header h1 {
   display: flex;
-  margin: 2rem;
-}
-@media screen and (max-width: 480px) {
-  header h1 {
-    margin: 1rem 0 1rem 1.5rem;
-  }
+  margin: 1rem 0 1rem 1.5rem;
 }
 header h1 a {
   font-size: 1.5rem;
 }
 header h1 img {
   margin: auto;
+}
+@media screen and (min-width: 901px) {
+  header {
+    margin: 2rem;
+  }
 }
 
 footer {
@@ -180,24 +173,24 @@ footer {
 footer h2 {
   padding: 30px 0 0 40px;
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: normal;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   footer h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 footer i {
   margin-right: 0.4rem;
 }
 footer li {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   footer li {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 footer li a {
@@ -217,13 +210,13 @@ footer li a {
 }
 .img-menu {
   width: 100%;
-  height: 30rem;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   .img-menu {
-    height: auto;
-    object-fit: contain;
+    height: 30rem;
+    object-fit: cover;
   }
 }
 
@@ -233,25 +226,25 @@ footer li a {
   margin-top: -3rem;
   border-radius: 2.5rem 2.5rem 0 0;
   background-color: #f6f6f6;
-  padding: 0 50px 0 50px;
+  padding: 0 20px 0 20px;
+  display: block;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .menu {
-    display: block;
-    padding: 0 20px 0 20px;
+    padding: 0 50px 0 50px;
   }
 }
 .menu h2 {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 40px 0 0 0;
   font-size: 2rem;
   margin: 0 0 10px 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .menu h2 {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -264,11 +257,11 @@ footer li a {
 }
 .menu-aside__h3 {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .menu-aside__h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 .menu-aside__h3::after {
@@ -281,22 +274,22 @@ footer li a {
 }
 .menu-aside form {
   text-align: center;
-  padding: 100px 0;
+  padding: 40px 0 80px 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .menu-aside form {
-    padding: 40px 0 80px 0;
+    padding: 100px 0;
   }
 }
 
 .order {
-  max-width: 50%;
+  max-width: none;
   display: flex;
   margin: auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .order {
-    max-width: none;
+    max-width: 50%;
   }
 }
 .order article {
@@ -310,15 +303,15 @@ footer li a {
 }
 .order article h3 {
   font-family: "robotobold", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .order article h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 .order article .text-item {
@@ -327,24 +320,22 @@ footer li a {
 }
 .order article p {
   margin: 0;
-  font-size: 1.3rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .order article p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 .order article span {
   font-family: "robotobold", sans-serif;
-  font-size: 1.3rem;
   margin: 0 1rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .order article span {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 .order .menu1 {
@@ -372,20 +363,20 @@ footer li a {
 }
 .order .fa-check-circle {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding: 1rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .order .fa-check-circle {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
-.order:active article {
+.order:hover article {
   border-radius: 1rem 0 0 1rem;
   width: 85%;
   transition: width 500ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
 }
-.order:active .order-bg {
+.order:hover .order-bg {
   display: block;
   animation: order 500ms 100ms cubic-bezier(0.05, 0.33, 0.89, 1.03) both;
   opacity: 0;
@@ -437,61 +428,58 @@ footer li a {
 
 .expl {
   height: auto;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: block;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .expl {
-    display: block;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 }
 .expl__txt {
   background-color: #f6f6f6;
-  padding: 30px 50px;
+  padding: 2rem;
   text-align: center;
   font-size: 1.5rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .expl__txt {
-    padding: 2rem;
+    padding: 30px 50px;
   }
 }
 .expl__txt--bold {
   font-family: "robotobold", sans-serif;
   font-size: 1.7rem;
-}
-@media screen and (max-width: 800px) {
-  .expl__txt--bold {
-    margin: 0;
-  }
+  margin: 0;
 }
 .expl__txt--grey {
   color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 5rem;
+  margin-bottom: 1.9rem;
+  font-size: 1.2rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .expl__txt--grey {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
+    margin-bottom: 5rem;
   }
 }
 .expl__fonct {
-  margin: 20px 20px 0 0;
-  padding: 0 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 20px 20px 80px 0;
+  padding: 0 20px;
   font-family: "robotobold", sans-serif;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   .expl__fonct {
     display: block;
     margin: 50px 0 80px 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .expl__fonct {
-    padding: 0 20px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
   }
 }
 .expl__fonct h2 {
@@ -501,38 +489,38 @@ footer li a {
 }
 .expl__fonct ol {
   counter-reset: fonct;
-  padding: 0;
+  padding-left: 10px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   .expl__fonct ol {
     padding-left: 20px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .expl__fonct ol {
-    padding-left: 10px;
+    padding: 0;
   }
 }
 .expl__fonct li {
   width: 100%;
   margin-bottom: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.5rem 0.5rem;
   background-color: #f6f6f6;
   border-radius: 1.5rem;
   list-style-type: none;
   counter-increment: fonct;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   .expl__fonct li {
     width: auto;
+    font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .expl__fonct li {
-    padding: 1.5rem 0.5rem;
-    font-size: 1.1rem;
+    padding: 1.5rem;
   }
 }
 .expl__fonct li:before {
@@ -543,21 +531,21 @@ footer li a {
   border-radius: 2rem;
   font-size: 0.9rem;
   position: relative;
-  right: 40px;
+  right: 20px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .expl__fonct li:before {
-    right: 20px;
+    right: 40px;
   }
 }
 .expl__fonct li i {
   color: rgba(0, 0, 0, 0.5);
   margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .expl__fonct li i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 .expl__fonct li:hover {
@@ -570,92 +558,73 @@ footer li a {
 }
 
 .cards-restau {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
   height: auto;
   font-size: 1.3rem;
-  padding: 5rem 0;
+  background-color: #f6f6f6;
+  padding: 1.5rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .cards-restau {
-    background-color: #f6f6f6;
-  }
-}
-@media screen and (max-width: 480px) {
-  .cards-restau {
-    padding-top: 2.5rem;
+    padding: 5rem 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 .cards-restau h2 {
   font-family: "robotobold", sans-serif;
-  width: 100%;
   font-size: 1.7rem;
-  margin-left: 5rem;
+  margin-left: 1.25rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   .cards-restau h2 {
     margin-left: 3.12rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .cards-restau h2 {
-    margin-left: 1.25rem;
+    width: 100%;
+    margin-left: 5rem;
   }
 }
 .cards-restau a {
   width: 580px;
-  background-color: #fff;
-  margin: 1rem;
+  margin: 1rem 1.25rem;
   height: auto;
-  border-radius: 1.5rem;
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   .cards-restau a {
     margin: 1rem 4rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 901px) {
   .cards-restau a {
-    object-position: bottom;
-    margin: 1rem 1.25rem;
+    margin: 1rem;
   }
 }
 .cards-restau article {
   display: flex;
   flex-direction: column;
   height: auto;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 .cards-restau img {
   width: 100%;
   object-fit: cover;
-  height: 16rem;
+  height: 12rem;
   border-radius: 1.5rem 1.5rem 0 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) {
   .cards-restau img {
-    height: 12rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .cards-restau img {
-    object-position: bottom;
+    height: 16rem;
   }
 }
 .cards-restau .img--position {
   object-position: bottom;
-}
-@media screen and (max-width: 800px) {
-  .cards-restau .img--position {
-    object-position: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  .cards-restau .img--position {
-    object-position: bottom;
-  }
 }
 .cards-restau .new {
   align-self: flex-end;
@@ -664,7 +633,7 @@ footer li a {
   font-family: "robotobold", sans-serif;
   font-size: 1.2rem;
   text-align: center;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.2rem;
   min-width: 5rem;
   max-width: 5rem;
@@ -672,9 +641,9 @@ footer li a {
   margin-right: 1rem;
   margin-top: 1rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .cards-restau .new {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 .cards-restau h3 {
@@ -689,12 +658,12 @@ footer li a {
   justify-content: flex-end;
   position: relative;
   bottom: 3rem;
-  right: 4rem;
+  right: 2rem;
   font-size: 2rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 901px) {
   .cards-restau .heart {
-    right: 2rem;
+    right: 4rem;
   }
 }
 

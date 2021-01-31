@@ -13,11 +13,11 @@
 
 .img-menu {
     width: 100%;
-    height: 30rem;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     @include tablette {
-        height: auto;
-        object-fit: contain;
+        height: 30rem;
+        object-fit: cover;
     }
 }
 .menu {
@@ -26,20 +26,20 @@
     margin-top: -3rem;
     border-radius: 2.5rem 2.5rem 0 0;
     background-color: $color-bgc;
-    padding: 0 50px 0 50px;
-    @include tablette {
-        display: block;
-        padding: 0 20px 0 20px;
+    padding: 0 20px 0 20px;
+    display: block;
+    @include desktop {
+        padding: 0 50px 0 50px;
     }
     h2 {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 40px 0 0 0;
         font-size: 2rem;
         margin: 0 0 10px 0;
-        @include tablette {
-            justify-content: space-between;
+        @include desktop {
+            justify-content: space-around;
         }
     }
 }
@@ -51,9 +51,9 @@
     animation: menu-opacity 1200ms cubic-bezier(.73,.01,.2,.99) both;
     &__h3 {
         text-transform: uppercase;
-        font-size: 1.5rem;
-        @include mobile {
-            font-size: 1.2rem;
+        font-size: 1.2rem;
+        @include desktop {
+            font-size: 1.5rem;
         }
     }
     &__h3::after {
@@ -65,20 +65,20 @@
         border-bottom: 3px solid $color-tertiary;
     }
     form {
-    text-align: center;
-    padding: 100px 0;
-    @include mobile {
+        text-align: center;
         padding: 40px 0 80px 0;
-        }
+            @include desktop {
+                padding: 100px 0;
+            }
     }
 }
 
 .order {
-    max-width: 50%;
+    max-width: none;
     display: flex;
     margin: auto;
-    @include tablette {
-        max-width: none;
+    @include desktop {
+        max-width: 50%;
     }
     article {
         width: 100%;
@@ -90,13 +90,13 @@
         @include box-shadow;
         h3 {
             font-family: $font-bold;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin: 0;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            @include mobile {
-                font-size: 1.2rem;
+            @include desktop {
+                font-size: 1.5rem;
             }
         }
         .text-item {
@@ -105,20 +105,18 @@
         }
         p {
             margin: 0;
-            font-size: 1.3rem;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            @include mobile {
-                font-size: 1rem;
+            @include desktop {
+                font-size: 1.3rem;
             }
         }
         span {
             font-family: $font-bold;
-            font-size: 1.3rem;
             margin: 0 1rem;
-            @include mobile {
-                font-size: 1rem;
+            @include desktop {
+                font-size: 1.3rem;
             }
         }
     }
@@ -147,18 +145,18 @@
     }
     .fa-check-circle {
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.2rem;
         padding: 1rem;
-        @include mobile {
-            font-size: 1.2rem;
+        @include desktop {
+            font-size: 2rem;
         }
     }
-    &:active article {
+    &:hover article {
         border-radius: 1rem 0 0 1rem;
         width: 85%;
         transition: width 500ms cubic-bezier(.05,.33,.89,1.03);
     }
-    &:active .order-bg {
+    &:hover .order-bg {
         display: block;
         animation: order 500ms 100ms cubic-bezier(.05,.33,.89,1.03) both;
         opacity: 0;

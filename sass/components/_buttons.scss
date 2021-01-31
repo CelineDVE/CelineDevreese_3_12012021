@@ -1,8 +1,9 @@
 .btn {
     & [value] {
+        min-width: 200px;
         color: #fff;
+        font-size: 1.1rem;
         border: none;
-        font-size: 1.3rem;
         background: linear-gradient(-2deg, $color-primary, $color-secondary);
         padding: 1.1rem 1.5rem;
         border-radius: 2rem;

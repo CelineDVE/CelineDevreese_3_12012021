@@ -1,49 +1,48 @@
 .expl {
     height: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    @include tablette {
-        display: block;
+    display: block;
+    @include desktop {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
     &__txt {
         background-color: $color-bgc;
-        padding: 30px 50px;
+        padding: 2rem;
         text-align: center;
         font-size: 1.5rem;
-        @include tablette {
-            padding: 2rem;
+        @include desktop {
+            padding: 30px 50px;
         }
         &--bold {
             @include font-bold;
             font-size: 1.7rem;
-            @include tablette {
-                margin: 0;
-            }
+            margin: 0;
         }
         &--grey {
             color: rgba(#000, 0.5);
-            margin-bottom: 5rem;
-            @include tablette {
-                margin-bottom: 30px;
-                font-size: 1.2rem;
+            margin-bottom: 1.9rem;
+            font-size: 1.2rem;
+            @include desktop {
+                margin-bottom: 5rem;
             }
         }
+        
     }
     &__fonct {
-        margin: 20px 20px 0 0;
-        padding: 0 50px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        margin: 20px 20px 80px 0;
+        padding: 0 20px;
         @include font-bold;
         @include tablette {
             display: block;
             margin: 50px 0 80px 0;
         }
-        @include mobile {
-            padding: 0 20px;
+        @include desktop {
+            padding: 0 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
         }
-
         h2 {
             width: 100%;
             margin: 27.2px 0;
@@ -51,30 +50,30 @@
         }
         ol {
             counter-reset: fonct;
-            padding: 0;
+            padding-left: 10px;
             @include tablette {
                 padding-left: 20px;
             }
-            @include mobile {
-            padding-left: 10px;
-        }
+            @include desktop {
+                padding: 0;
+            }
         }
         li {
             width: 100%;
             margin-bottom: 1.5rem;
-            padding: 1.5rem;
+            padding: 1.5rem .5rem;
             background-color: $color-bgc;
             border-radius: 1.5rem;
             list-style-type: none;
             counter-increment: fonct;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             @include box-shadow;
             @include tablette {
                 width: auto;
+                font-size: 1.2rem;
             }
-            @include mobile {
-                padding: 1.5rem .5rem;
-                font-size: 1.1rem;
+            @include desktop {
+                padding: 1.5rem;
             }
             &:before {
                 content: counter(fonct);
@@ -84,17 +83,17 @@
                 border-radius: 2rem;
                 font-size: .9rem;
                 position: relative;
-                right: 40px;
-                @include mobile {
-                    right: 20px;
+                right: 20px;
+                @include desktop {
+                    right: 40px;
                 }
             }
             i {
                 color: rgba(#000, 0.5);
                 margin-right: 1rem;
-                font-size: 1.5rem;
-                @include mobile {
-                    font-size: 1.2rem;
+                font-size: 1.2rem;
+                @include desktop {
+                    font-size: 1.5rem;
                 }
             }
             &:hover {

@@ -1,69 +1,58 @@
 .cards-restau {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
     height: auto;
     font-size: 1.3rem;
-    padding: 5rem 0;
-    @include tablette {
-        background-color: $color-bgc;;
-    }
-    @include mobile {
-        padding-top: 2.5rem;
+    background-color: $color-bgc;;
+    padding: 1.5rem;
+    @include desktop {
+        padding: 5rem 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
     }
     h2 {
         font-family: $font-bold;
-        width: 100%;
         font-size: 1.7rem;
-        margin-left: 5rem;
+        margin-left: 1.25rem;
         @include tablette {
             margin-left: 3.12rem;
         }
-        @include mobile {
-            margin-left: 1.25rem;
+        @include desktop {
+            width: 100%;
+            margin-left: 5rem;
         }
     }
     a {
         width: 580px;
-        background-color: #fff;
-        margin: 1rem;
+        margin: 1rem 1.25rem;
         height: auto;
-        border-radius: 1.5rem;
-        @include box-shadow;
         @include tablette {
             margin: 1rem 4rem;
         }
-        @include mobile {
-            object-position: bottom;
-            margin: 1rem 1.25rem;
+        @include desktop {
+            margin: 1rem;
         }
     }
     article {
         display: flex;
         flex-direction: column;
         height: auto;
+        background-color: #fff;
+        border-radius: 1.5rem;
+        @include box-shadow;
     }
     img {
         width: 100%;
         object-fit: cover;
-        height: 16rem;
+        height: 12rem;
         border-radius: 1.5rem 1.5rem 0 0;
         @include tablette {
-            height: 12rem;
-        }
-        @include mobile {
-            object-position: bottom;
+            height: 16rem;
         }
     }
     .img--position {
         object-position: bottom;
-        @include tablette {
-            object-position: center;
-        }
-        @include mobile {
-            object-position: bottom;
-        }
     }
     .new {
         align-self: flex-end;
@@ -72,15 +61,15 @@
         font-family: $font-bold;
         font-size: 1.2rem;
         text-align: center;
-        padding: .5rem 1.5rem;
+        padding: .5rem 1rem;
         border-radius: .2rem;
         min-width: 5rem;
         max-width: 5rem;
         position: absolute;
         margin-right: 1rem;
         margin-top: 1rem;
-        @include tablette {
-            padding: .5rem 1rem;
+        @include desktop {
+            padding: .5rem 1.5rem;
         }
     }
     h3 {
@@ -95,10 +84,10 @@
         justify-content: flex-end;
         position: relative;
         bottom: 3rem;
-        right: 4rem;
+        right: 2rem;
         font-size: 2rem;
-        @include tablette {
-            right: 2rem;
+        @include desktop {
+            right: 4rem;
         }
     }
     
