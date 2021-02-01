@@ -166,6 +166,7 @@ header h1 img {
 }
 
 footer {
+  width: 100%;
   background-color: #353535;
   color: #fff;
   padding-bottom: 20px;
@@ -221,13 +222,11 @@ footer li a {
 }
 
 .menu {
-  width: auto;
   position: relative;
   margin-top: -3rem;
   border-radius: 2.5rem 2.5rem 0 0;
   background-color: #f6f6f6;
   padding: 0 20px 0 20px;
-  display: block;
 }
 @media screen and (min-width: 901px) {
   .menu {
@@ -282,8 +281,31 @@ footer li a {
   }
 }
 
+@keyframes menu-opacity {
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes menu_item {
+  0% {
+    transform: translate(-110%) scale(0);
+  }
+}
+@keyframes check {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes order {
+  100% {
+    opacity: 1;
+  }
+}
 .order {
-  max-width: none;
+  width: 100%;
   display: flex;
   margin: auto;
 }
@@ -302,10 +324,10 @@ footer li a {
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 .order article h3 {
+  width: auto;
   font-family: "robotobold", sans-serif;
   font-size: 1.2rem;
   margin: 0;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -319,8 +341,8 @@ footer li a {
   justify-content: space-between;
 }
 .order article p {
+  width: 80%;
   margin: 0;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -351,54 +373,32 @@ footer li a {
   animation-delay: 1200ms;
 }
 .order .order-bg {
-  width: 15%;
+  display: none;
+  width: auto;
   height: 100%;
   margin: auto;
-  padding: 0.84rem 0;
+  padding: 0.55rem 0.5rem;
   background-color: #99e2d0;
   border-radius: 0 1rem 1rem 0;
   text-align: center;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
-  display: none;
 }
 .order .fa-check-circle {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   padding: 1rem;
-}
-@media screen and (min-width: 901px) {
-  .order .fa-check-circle {
-    font-size: 2rem;
-  }
+  animation: check 800ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
 }
 .order:hover article {
   border-radius: 1rem 0 0 1rem;
-  width: 85%;
-  transition: width 500ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
+  transition: all 500ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
 }
 .order:hover .order-bg {
   display: block;
-  animation: order 500ms 100ms cubic-bezier(0.05, 0.33, 0.89, 1.03) both;
+  animation: order 500ms cubic-bezier(0.05, 0.33, 0.89, 1.03) both;
   opacity: 0;
 }
-.order .fa-check-circle {
-  animation: check 800ms 300ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
-}
 
-@keyframes order {
-  100% {
-    width: 15%;
-    opacity: 1;
-  }
-}
-@keyframes check {
-  0% {
-    transform: rotate(-360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 .search_city {
   display: flex;
   background-color: #eaeaea;
