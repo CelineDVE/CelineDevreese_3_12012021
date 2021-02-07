@@ -16,7 +16,8 @@
        background-color: $color-secondary;
    }
    100% {
-       opacity: 0;
+        background-color: $color-primary;
+        opacity: 0;
    }
 }
 

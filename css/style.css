@@ -46,21 +46,19 @@ ul {
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 .btn [value]:hover {
-  box-shadow: 6px 6px 15px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px 15px 2px rgba(0, 0, 0, 0.4);
   opacity: 0.9;
   transition: all 250ms;
 }
 
 .progress-heart {
-  display: block;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0.11rem;
-  -webkit-text-stroke-color: #000;
   background: -webkit-linear-gradient(-150deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
   transition: all 1000ms cubic-bezier(0.05, 0.33, 0.89, 1.03);
   background-repeat: no-repeat;
-  background-size: 100% 0px;
+  background-size: 100% 0;
   background-position: 100% 100%;
   cursor: pointer;
   padding: 0.1rem;
@@ -88,6 +86,7 @@ ul {
     background-color: #ff79da;
   }
   100% {
+    background-color: #9356dc;
     opacity: 0;
   }
 }
@@ -198,13 +197,11 @@ footer li a {
   color: #fff;
 }
 
-/* PAGE MENU */
+/* PAGES DE MENU */
 .img-menu {
   width: 100%;
-  height: auto;
-  object-fit: contain;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 901px) {
   .img-menu {
     height: 30rem;
     object-fit: cover;
@@ -241,13 +238,16 @@ footer li a {
   0% {
     opacity: 0;
   }
+  25% {
+    opacity: 0;
+  }
 }
 .menu-aside {
   width: auto;
+  margin: auto;
   padding-top: 20px;
   opacity: 1;
-  margin: auto;
-  animation: menu-opacity 1200ms cubic-bezier(0.73, 0.01, 0.2, 0.99) both;
+  animation: menu-opacity 1200ms ease-in-out;
 }
 .menu-aside__h3 {
   text-transform: uppercase;
@@ -279,15 +279,13 @@ footer li a {
 
 @keyframes menu_item {
   0% {
-    transform: translate(-110%) scale(0);
+    transform: scale(0);
+    transform-origin: 50% top;
   }
 }
 @keyframes check {
   0% {
-    transform: rotate(-360deg);
-  }
-  100% {
-    transform: rotate(0deg);
+    transform: rotate(-280deg);
   }
 }
 @keyframes order {
@@ -385,12 +383,12 @@ footer li a {
   color: #fff;
   font-size: 1.8rem;
   padding: 1rem;
-  animation: check 500ms 150ms linear;
+  animation: check 500ms 150ms cubic-bezier(0.39, 0.54, 0.57, 1.09);
 }
-.order:hover article {
+.order:active article {
   border-radius: 1rem 0 0 1rem;
 }
-.order:hover .order-bg {
+.order:active .order-bg {
   opacity: 0;
   display: block;
   animation: order 500ms ease-in-out forwards;

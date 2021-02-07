@@ -1,17 +1,15 @@
 .progress-heart {
-    display: block;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: .11rem;
-    -webkit-text-stroke-color: #000;
     background: -webkit-linear-gradient(-150deg, $color-primary, $color-secondary);
     -webkit-background-clip: text;
     transition : all 1000ms cubic-bezier(.05,.33,.89,1.03);
     background-repeat : no-repeat;
-    background-size: 100% 0px;
+    background-size: 100% 0;
     background-position : 100% 100%; 
     cursor: pointer;
     padding: .1rem;
-    &:hover{
+    &:hover {
         background-size: 100% 100%;
         -webkit-text-stroke-color: transparent;
     }

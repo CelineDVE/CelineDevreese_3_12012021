@@ -1,12 +1,8 @@
-/* PAGE MENU */
-
-
+/* PAGES DE MENU */
 
 .img-menu {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    @include tablette {
+    @include desktop {
         height: 30rem;
         object-fit: cover;
     }
@@ -37,14 +33,17 @@
     0% {
         opacity: 0;
     }
+    25% {
+        opacity: 0;
+    }
 }
 
 .menu-aside {
     width: auto;
+    margin: auto;
     padding-top: 20px;
     opacity: 1;
-    margin: auto;
-    animation: menu-opacity 1200ms cubic-bezier(.73,.01,.2,.99) both;
+    animation: menu-opacity 1200ms ease-in-out;
     &__h3 {
         text-transform: uppercase;
         font-size: 1.2rem;
@@ -71,15 +70,13 @@
 
 @keyframes menu_item {
     0% {
-        transform: translate(-110%) scale(0);
+        transform: scale(0);
+        transform-origin: 50% top;
     }
 }
 @keyframes check { 
     0% {
-        transform: rotate(-360deg);
-    }
-    100% {
-        transform: rotate(0deg);
+        transform: rotate(-280deg);
     }
 }
 @keyframes order {
@@ -167,12 +164,12 @@
         color: #fff;
         font-size: 1.8rem;
         padding: 1rem;
-        animation: check 500ms 150ms linear;
+        animation: check 500ms 150ms cubic-bezier(.39,.54,.57,1.09);
     }
-    &:hover article {
+    &:active article {
         border-radius: 1rem 0 0 1rem;
     }
-    &:hover .order-bg {
+    &:active .order-bg {
         opacity: 0;
         display: block;
         animation: order 500ms ease-in-out forwards;
